@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "wiehackathon2021",
+  "private_key_id": "491e16d078e1957ae97066db587e0cc1d6972320",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDT1LL8bNfuVoqS\nAAo1OzQ56RXMgnB7bCYV1oppHZ+B7RfRlUNDZz/zuiR2iwjHC9pQBLGmtX/40i1R\nJr0hWYHli+GkFeTLTIIR5pVBaGgXiXtDlmElNS/Gu+c480YwjgNXK4yREUtE5x1x\nXxGNvRDONSxA4eDyC40vh0i6d5saDRQTfrXFWuPP6Y4q5ThnEA7MV05nQLINBx/O\nC1B2BxGuNyNNe3appgeKnXinLJhDfnmxB2IPtzSEDIdhGicNgo2QpvYhmUGDMj6t\nJ28o/FCb6lb/UF3B66Q4/fcvdxik68Nl+acwG8OgK/o2X692MaJB0L/C3g7SBEB0\nGXKXZmELAgMBAAECggEAF+Qb4cNm4S8qhsfxXsqUG9nxhvTJOepbK0hcqPlZ1Z4H\nezBR+0aoXFVIqoQI0+Y+05qL7Mj4q3gM+2OaninJsDmEE+0SNmmlG969Q7jCULFF\nUTyjLT6f6lKkA/TQHEbQEqNLQctJCXblh7VYtfs2a4Nsv86Z/8KUxGEGL12xBRFy\nzDXpzXAImTrJ2RdgNaZnZBnWlBUxZGwAcNvqtDwRr7jbZ2IoAmIy2uchesoaed46\nWMrcFnZr57vfIa230zqs4xsjzsGecOru542UuanKe6jIzOhAkl9+308J+ovCgXkH\nr1bESokbPJABl5KnjKxSjXYH/tTNHgD0GTBGQ387DQKBgQD/JIy81FGH21XLoQkE\nJtyS1TO7JJSnS00/P4AF8oD4ubL+oq9MIwYrO4/FKPx5Nk2nfL5OHOofGpbDnUD2\nNRiq5KvOY3rcUEu0MXxhJRnbkFDLEzBh5YZpao2aNuidrQ5eBW6D913s6+QI58s/\nr9LBULaVaJBJGnXk6YsV7IchPQKBgQDUiuWA69jaPZKzbL4Cg9IgJkS20LucbMn4\nN4e4txFQJvoags9fnnaIk6FMs2sK4MPamjUQOz0UFyi+FVBMXTyHFrkplPVUVKOH\nkwMjPNKtGk9lUNKTpEkQP14Mh5aZrkzYDluY7vThb14V/9R9GQetxuoleVxNoQqR\n+0cwo0Uf5wKBgQCMPtL9mNeYDgCDBemm1pW4QGlHHTx5GPNFKOp+WmZ6UdkKDvK8\nryPc78h/X6AoIKlevzr8RPiMUFk+/VmP/G+qwDeQIy6Nm7WBPxJXc8Va42EFv26A\n4WGY4HElq7kBsvaKyAGPmJGQgbm/C2q1fzgh+vPh/LAS/vB++8DwNCuzIQKBgGom\nUIb5w10D4W+hAKjK4zfRRQI0724pWxmPykXzkD8CqGhzKlSsFLETYjynYu+U39we\nph/MJi4RfvSoOmlZK3CgZauhzIDooJ+GScvghauUd1C3c+Pu6dqmezcwxINObOx/\nBzozJbQtZcUA90PfK1mb/bbnjLTsmBXedGiTMmPDAoGAX0phS3uDi2ZpUDaFsrc1\nFowiogIkONyZnQiRmxoeEpH1nXpP3sqhzgD/g3huhXgzAG5a49N/A4fFVVi5UNFy\nQ0p7HL1vBV8FsZ6phdo4pfK7UFNWFG6kF7pJtXJ1vi8UWiWf9cBFETH9t7VLgx3O\nVckIRxGkzuz+2bLM0ByaRcY=\n-----END PRIVATE KEY-----\n",
+  "client_email": "wiehackathon2021@wiehackathon2021.iam.gserviceaccount.com",
+  "client_id": "102030379584254654934",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/wiehackathon2021%40wiehackathon2021.iam.gserviceaccount.com"
+}
