@@ -15,7 +15,7 @@ router.post("/register",upload.single("abstract"),async(req,res)=>{
         }
         else{
             let savedParticipant;
-            const KEYFILEPATH=path.join(path.dirname(__dirname),"wiehackathon2021-491e16d078e1.json");
+            const KEYFILEPATH=path.join(path.dirname(__dirname),"psyched-thunder-373816-df557d4e487a.json");
             const SCOPES=['https://www.googleapis.com/auth/drive'];
             let id;
             const auth = new google.auth.GoogleAuth({
@@ -24,13 +24,14 @@ router.post("/register",upload.single("abstract"),async(req,res)=>{
             });
             async function createUserAndUploadFile(auth){
                 const drive = google.drive({version:'v3',auth});
+                console.log(req.file.originalname)
                 let fileMetadata = {
-                    'name': req.body.teamName + '_' + req.body.teamLeaderEmail,
-                    mimeType: 'application/pdf',
-                    'parents': ['1Ay5a1HKTgs07WJaeWWGQrGOnsoBBkRcn']
+                    'name': req.body.teamName + '_' + JSON.parse(req.body.teamDetails)[0].leadName + "." + req.file.originalname.split('.').pop(),
+                    mimeType: 'application/*',
+                    'parents': ['1Oo-D9NZ-hvHOQyWuW9nXYszYyOTDT9Si']
                 };
                 const media = {
-                    mimeType: 'application/pdf',
+                    mimeType: 'application/*',
                     body: fs.createReadStream(req.file.path)
                 };
                 const file = await drive.files.create({
@@ -39,14 +40,25 @@ router.post("/register",upload.single("abstract"),async(req,res)=>{
                     fields: 'id'
                 });
                 id=file.data.id;
+                let array = JSON.parse(req.body.teamDetails);
+                let part={}
+                for(let i=0; i<array.length; i++){
+                    part={
+                        ...part,
+                        ...array[i]
+                    }
+                }
                 var participant=new Participant({
-                    ...req.body,
+                    teamName:req.body.teamName,
+                    teamSize:req.body.teamSize,
+                    domain:req.body.domain,
+                    ...part
                 });
                 savedParticipant=await participant.save();
             }
             await createUserAndUploadFile(auth).catch(err=>{throw err});
             fs.unlinkSync(req.file.path);
-            res.status(200).send(savedParticipant);
+            res.status(200).send({"status":200,"message":"successful"});
         }
     }catch(err){
         console.log(err);

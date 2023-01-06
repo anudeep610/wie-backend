@@ -13,60 +13,60 @@ const participantSchema=new mongoose.Schema({
         type:Number,
         required:true
     },
-    teamLeaderName:{
+    leadName:{
         type:String,
         required:true
     },
-    teamLeaderEmail:{
+    leadEmail:{
         type:String,
         required:true
     },
-    teamLeaderPhone:{
+    leadMobile:{
         type:String,
         required:true
     },
-    teamLeaderCollege:{
+    leadClg:{
         type:String,
         required:true
     },
-    member1Name:{
+    m1Name:{
         type:String,
         required:true
     },
-    member1Email:{
+    m1Email:{
         type:String,
         required:true
     },
-    member1Phone:{
+    m1Mobile:{
         type:String,
         required:true
     },
-    member1College:{
+    m1Clg:{
         type:String,
         required:true
     },
-    member2Name:{
+    m2Name:{
         type:String,
     },
-    member2Email:{
+    m2Email:{
         type:String,
     },
-    member2Phone:{
+    m2Mobile:{
         type:String,
     },
-    member2College:{
+    m2Clg:{
         type:String,
     },
-    member3Name:{
+    m3Name:{
         type:String,
     },
-    member3Email:{
+    m3Email:{
         type:String,
     },
-    member3Phone:{
+    m3Mobile:{
         type:String,
     },
-    member3College:{
+    m3Clg:{
         type:String,
     },
 },{timestamps:true});
