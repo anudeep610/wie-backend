@@ -5,6 +5,9 @@ const participantSchema=new mongoose.Schema({
         type:String,
         required:true
     },
+    referral:{
+        type:String
+    },
     domain:{
         type:String,
         required:true

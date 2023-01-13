@@ -52,6 +52,7 @@ router.post("/register",upload.single("abstract"),async(req,res)=>{
                     teamName:req.body.teamName,
                     teamSize:req.body.teamSize,
                     domain:req.body.domain,
+                    referral:req.body.referral,
                     ...part
                 });
                 savedParticipant=await participant.save();
