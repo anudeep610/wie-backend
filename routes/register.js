@@ -15,7 +15,9 @@ router.post("/register",upload.single("abstract"),async(req,res)=>{
         }
         else{
             let savedParticipant;
-            const KEYFILEPATH=path.join(path.dirname(__dirname),"psyched-thunder-373816-df557d4e487a.json");
+            // const KEYFILEPATH=path.join(path.dirname(__dirname),"psyched-thunder-373816-df557d4e487a.json");
+            const KEYFILEPATH=path.join(path.dirname(__dirname),"wie-code-2023-668521240163.json");
+
             const SCOPES=['https://www.googleapis.com/auth/drive'];
             let id;
             const auth = new google.auth.GoogleAuth({
@@ -28,7 +30,11 @@ router.post("/register",upload.single("abstract"),async(req,res)=>{
                 let fileMetadata = {
                     'name': req.body.teamName + '_' + JSON.parse(req.body.teamDetails)[0].leadName + "." + req.file.originalname.split('.').pop(),
                     mimeType: 'application/*',
-                    'parents': ['1Oo-D9NZ-hvHOQyWuW9nXYszYyOTDT9Si']
+                    // 'parents': ['1Oo-D9NZ-hvHOQyWuW9nXYszYyOTDT9Si']
+                    // 'parents': ['1SmCa_3ic6iad2SMMb4pzJHjRntDmw4NH'] anagha
+                    'parents': ['1-tWN6UGTwORk-oKDF93J4D6PhW11qpeV']
+
+
                 };
                 const media = {
                     mimeType: 'application/*',
@@ -58,7 +64,7 @@ router.post("/register",upload.single("abstract"),async(req,res)=>{
                 savedParticipant=await participant.save();
             }
             await createUserAndUploadFile(auth).catch(err=>{throw err});
-            fs.unlinkSync(req.file.path);
+            // fs.unlinkSync(req.file.path);
             res.status(200).send({"status":200,"message":"successful"});
         }
     }catch(err){
