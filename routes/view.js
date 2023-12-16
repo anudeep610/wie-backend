@@ -5,8 +5,8 @@ var Participant=require('../models/participant');
 router.get("/viewAllRegistrations",async(req,res)=>{
 
     try{
-        console.log(participants)
         let participants=await Participant.find();
+        // console.log(participants)
         res.render("viewAll",{participants:participants});
     }catch(err){
         console.log(err)
