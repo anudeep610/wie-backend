@@ -3,10 +3,13 @@ var router=express.Router();
 var Participant=require('../models/participant');
 
 router.get("/viewAllRegistrations",async(req,res)=>{
+
     try{
+        consoole.log(participants)
         let participants=await Participant.find();
         res.render("viewAll",{participants:participants});
     }catch(err){
+        console.log(err)
         res.status(400).send({message:err});
     }
 });
