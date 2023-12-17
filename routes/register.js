@@ -64,7 +64,7 @@ router.post("/register",upload.single("abstract"),async(req,res)=>{
                 savedParticipant=await participant.save();
             }
             await createUserAndUploadFile(auth).catch(err=>{throw err});
-            // fs.unlinkSync(req.file.path);
+            fs.unlinkSync(req.file.path);
             res.status(200).send({"status":200,"message":"successful"});
         }
     }catch(err){
