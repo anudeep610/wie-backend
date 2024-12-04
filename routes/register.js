@@ -24,6 +24,7 @@ router.post("/register", upload.single("abstract"), async (req, res) => {
                 keyFile: KEYFILEPATH,
                 scopes: SCOPES
             });
+            console.log(auth)
             async function createUserAndUploadFile(auth) {
                 const drive = google.drive({ version: 'v3', auth });
                 console.log(req.file.originalname)
