@@ -17,7 +17,7 @@ router.post("/register", upload.single("abstract"), async (req, res) => {
             let savedParticipant;
             // const KEYFILEPATH=path.join(path.dirname(__dirname),"psyched-thunder-373816-df557d4e487a.json");
             const KEYFILEPATH = path.join(path.dirname(__dirname), "proud-armor-432117-u6-0c2f9a304820.json");
-
+            console.log("1st check point")
             const SCOPES = ['https://www.googleapis.com/auth/drive'];
             let id;
             const auth = new google.auth.GoogleAuth({
@@ -27,6 +27,7 @@ router.post("/register", upload.single("abstract"), async (req, res) => {
             async function createUserAndUploadFile(auth) {
                 const drive = google.drive({ version: 'v3', auth });
                 console.log(req.file.originalname)
+                console.log("second ")
                 let fileMetadata = {
                     'name': req.body.teamName + '_' + JSON.parse(req.body.teamDetails)[0].leadName + "." + req.file.originalname.split('.').pop(),
                     mimeType: 'application/*',
@@ -45,6 +46,7 @@ router.post("/register", upload.single("abstract"), async (req, res) => {
                     media: media,
                     fields: 'id'
                 });
+                console.log("third")
                 id = file.data.id;
                 let array = JSON.parse(req.body.teamDetails);
                 let part = {}
@@ -63,8 +65,11 @@ router.post("/register", upload.single("abstract"), async (req, res) => {
                 });
                 savedParticipant = await participant.save();
             }
+            console.log("fourth")
             await createUserAndUploadFile(auth).catch(err => { throw err });
+            console.log("fifth")
             fs.unlinkSync(req.file.path);
+            console.log("sixth")
             res.status(200).send({ "status": 200, "message": "successful" });
         }
     } catch (err) {
