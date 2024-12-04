@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "proud-armor-432117-u6",
+  "private_key_id": "0c2f9a3048203b59e6f043e7ff84a6a4d58fa000",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDgmm3zx8MCUxLJ\n8Ec0rPZoMm12pfswGMsJ//smguRgKlOb4AAkLHUJpaNUYWX72vtFbhB6neS1HHb2\nRPl8e4O7imDiwg50704zKfrYUZV1+GTnzmMwlcEQgoR0UryWAmS0XwIa2VEzOE1c\nGSSQ9cMEmrGl68CW+9J53inmHHW1zX+4vdWzAdKgV+I8yOszl02cBqJLzoO+ziN+\nnWeCxFB1Xu1OyJyOAOy8YaTm2VzR4Cd3fyV+3t+1lW7Th889j/oYr5PU3/YpRoOi\nI+DyRT2WNnGPSqBuVo39Lv6wacrGjUSImXMcKKG5qeYfsmZ3dIdT+cKEjiHb5dNZ\nqipUNbgHAgMBAAECggEAAZoh/ti/biozN8fn0wjkokLOvLU4z/ZYDec/v3AwwAI5\noAVtJViRCRgb7Y4OTOa7NwxEqjHejn4p0GH5e7d422EpF/Vv+LRUdAZgE2H+DSV4\nMYhps0GpZ1QZ+b1aFdiVaP6k5WKeDI8RPPBpB8a0MxxWK3WnmHCuZv0//rePHAPu\nbmV7F0Q42O1RiPUUSfF/GUzNAO9suN8ZiECpjdtzu9ZQBr+7BVk/IqZ1oRSoEDfV\n4Fs6OzvL769QaHb0t6hvybTtw42w8FSM8qqs7pKUQZkXKs8Y5nscFM+DmgRcaNnG\nShtlYQTlnkcz3/8snZWqSyOiygNlFi0Lolggoyn2BQKBgQDys6QfRY4yZ9ZzQVAZ\nGiXEXGP5IesD59n5zPrdHo8/s2l+GJkF1+/N7qEc37kXzCJF0sGvul2pTAAO9fAs\n1N15B4JPU0y+89jd7RJJ2PEXsoIOrY3f4zKibjOoZ/UrhKUwfcBoCevshB0C74/c\njIzkcr7HWEQwSaD2bGQh4VAXiwKBgQDs6OweLU1Cysmjr2ITo1IQR5mDb5QH3U9V\nOZ0bin+oPrjPAT8CWtOXaphkyx0rxGsVTgxxQF7WjHqXchrjD3uRVNC2E/z7eW0K\njBnoNx0SfhYeG6IT3X14VaHTGfuE9QdFYsX8VO+G1rygiMjOpNGwOU3T1ZOzhImL\nqCUZchOQ9QKBgAPJ2BMA4/JXepp794MczGAfTRQzelaqRNXIZFYVRwkohMoKGkFk\nGIMvaWZo+5uqfRJ38rwKfbHJ1Opm3mPkwrxD6L3SQA1vAwCb1cA/WawUBkGyZdeL\n1VuBut6zGLmgLW/vVpSJKxybB1TnZmh77SsXu3CjKRVT4OZX1MxOlxB3AoGBAKqS\nob6we1pFy5xw4DqncqSKCLubkIeBDmecTcPQmk02q7VPfmBhqMryUrrvixdCGp+C\nTG8WG7J5/qIf47/sG9ntqUAPcCxXpuzbJqQNWn9ADQiseKu442fKr/LgWDnIee25\nSjd9p9/7qGAlW/98qAUrnR+SPQAZwzasX9nMSs4pAoGBAJz6TxMDvKG+IXEwmPuh\nyRCw3MS/t2ulaN197RfUOWRmIf4dTqOcVVtrE4g8n0mHRiQcjWUb867SyeHw6ifR\nERwI8qjxoAhzegCKW6THtybdJF8KF0llJz6y6rZJdgFfF9LexOuya3mRouxdCELx\nJ0SuCEmybh5LqwFFZNUnIgBf\n-----END PRIVATE KEY-----\n",
+  "client_email": "wiecode2024-25@proud-armor-432117-u6.iam.gserviceaccount.com",
+  "client_id": "114133706435065761089",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/wiecode2024-25%40proud-armor-432117-u6.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
