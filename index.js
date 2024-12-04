@@ -1,13 +1,17 @@
 require("./db/mongoose");
 const express=require("express");
 const app=express();
-const cors=require("cors");
+// const cors=require("cors");
 const env=require("dotenv");
 
 const registerRoute=require("./routes/register");
 const viewRoute=require("./routes/view");
 
 env.config();
+const cors = require('cors');
+app.use(cors({
+    origin: '*', // Adjust this to your frontend domain
+}));
 
 app.use(cors());
 app.use(express.urlencoded({extended:true}));
