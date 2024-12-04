@@ -15,11 +15,13 @@ app.use(express.json());
 app.set("view engine","ejs");
 app.use(registerRoute);
 app.use(viewRoute);
-
+app.get("/",(req,res) => {
+    res.status(200).send({message:"Request successfull"});
+})
 app.all("*",(req,res)=>{
     res.status(404).send({message:"Page Not Found"});
 });
 
-app.listen(process.env.PORT,()=>{
+app.listen(process.env.PORT,"0.0.0.0",()=>{
     console.log(`Server is running on port ${process.env.PORT}`);
 });
