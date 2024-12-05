@@ -69,7 +69,8 @@ router.post("/register", upload.single("abstract"), async (req, res) => {
     } catch (err) {
         console.log(err);
         fs.unlinkSync(req.file.path);
-        res.status(400).send({ err });
+        // res.status(400).send({ err });
+        res.status(400).json({ message: "Invalid input data" });
     }
 });
 
