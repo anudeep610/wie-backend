@@ -25,6 +25,9 @@ app.get("/",(req,res) => {
 // app.all("*",(req,res)=>{
 //     res.status(404).send({message:"Page Not Found"});
 // });
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'build', 'index.html'));
+  });
 
 app.listen(process.env.PORT,"0.0.0.0",()=>{
     console.log(`Server is running on port ${process.env.PORT}`);
