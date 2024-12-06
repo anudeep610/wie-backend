@@ -19,6 +19,8 @@ app.use(express.json());
 app.set("view engine","ejs");
 app.use(registerRoute);
 app.use(viewRoute);
+// app.use(express.static(path.join(__dirname, 'build')));
+
 app.get("/",(req,res) => {
     res.status(200).send({message:"Request successfull"});
 })
